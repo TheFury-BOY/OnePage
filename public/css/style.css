@@ -1,39 +1,4 @@
 
-
-@font-face {
-    font-family:'osaka';
-    src: url('../font/OsakaChips.ttf');
-}
-
-@font-face {
-    font-family:'boldfont';
-    src: url('../font/theboldfont.ttf');
-}
-
-@font-face {
-    font-family:'caviar';
-    src: url('../font/CaviarDreams.ttf');
-    
-    
-    font-family:'caviar_b';
-    src: url('../font/CaviarDreams_Bold.ttf');
-}
-
-@font-face {
-    font-family:'caviar_bi';
-    src: url('../font/CaviarDreams_BoldItalic.ttf');
-}
-
-@font-face {
-    font-family:'caviar_i';
-    src: url('../font/CaviarDreams_Italic.ttf');
-}
-
-@font-face {
-    font-family:'sketch';
-    src: url('../font/Sketch.otf') format('otf'), 
-    url('../font/Sketch.woff') format('woff');
-}
 /*Default*/
 * {
     scroll-behavior:smooth;
@@ -113,13 +78,13 @@ p {
     color: #fff;
     text-align: center;
     font-size: 4rem;
-    margin-top:30vh;
+    margin-top:40vh;
 }
 
 .header h3 {
     text-align: center;
     color:#fff;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 .header span {
     font-size: 2rem;
@@ -187,7 +152,7 @@ p {
 
 /* Etudes & Experiences Styles */
 .cartes img {
-    height:100px;
+    max-height:70px;
     width:auto;
     margin-top: 80px;
 }
@@ -232,6 +197,7 @@ p {
     padding: 50px 0px 50px;
     text-align: center;
     background-color: #081c28;
+    height: 80vh;
 }
 
 .contacts h2 {
