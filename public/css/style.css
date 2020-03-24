@@ -1,0 +1,295 @@
+
+
+@font-face {
+    font-family:'osaka';
+    src: url('../font/OsakaChips.ttf');
+}
+
+@font-face {
+    font-family:'boldfont';
+    src: url('../font/theboldfont.ttf');
+}
+
+@font-face {
+    font-family:'caviar';
+    src: url('../font/CaviarDreams.ttf');
+    
+    
+    font-family:'caviar_b';
+    src: url('../font/CaviarDreams_Bold.ttf');
+}
+
+@font-face {
+    font-family:'caviar_bi';
+    src: url('../font/CaviarDreams_BoldItalic.ttf');
+}
+
+@font-face {
+    font-family:'caviar_i';
+    src: url('../font/CaviarDreams_Italic.ttf');
+}
+
+@font-face {
+    font-family:'sketch';
+    src: url('../font/Sketch.otf') format('otf'), 
+    url('../font/Sketch.woff') format('woff');
+}
+/*Default*/
+* {
+    scroll-behavior:smooth;
+}
+
+h1, h4 {
+    font-family: 'PT Sans Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+h2 {
+    width:100vw;
+}
+
+body {
+    overflow-x: hidden;
+    width:100vw;
+}
+
+.btn {
+    transition: all 300ms ease-in-out;
+    font-weight: 500 !important;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color: #ededed !important;
+    color:#3c3c3c !important;
+    border: 1px solid #fff !important;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.container-header {
+    width:100vw;
+}
+
+/*Navbar Style*/
+.navbar a:hover {
+    border-bottom: solid 3px chocolate ;
+}
+
+.navbar a{
+    border-bottom: solid 3px transparent;
+    margin:0;
+}
+
+.navbar {
+    padding:0 1rem 0rem 1rem;
+    /* haut | droit | bas | gauche */
+    width: 100vw;
+}
+
+.navbar-toggler {
+    padding:2px;
+    border:0;
+}
+
+.navbar-toggler:hover {
+    border:0;
+    text-decoration: none;
+}
+
+/* Header Style */
+.header {
+    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),
+     url('../img/me.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.header h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 4rem;
+    margin-top:30vh;
+}
+
+.header h3 {
+    text-align: center;
+    color:#fff;
+    font-size: 2rem;
+}
+.header span {
+    font-size: 2rem;
+    position: relative;
+    top: -10px;
+    color:chocolate;
+}
+
+.header strong {
+    color:chocolate;
+}
+
+.flex-container {
+    display: flex !important;
+    border:1px;
+    height: 3rem;
+    width: 100vw;
+    justify-content: center;
+
+}
+
+.flex {
+    text-align: center;
+    align-self: center;
+    color:#fff;
+    border-radius: 2;
+    background-color: #12122D;
+}
+
+/* Services Styles */
+.services {
+    padding: 5rem;
+    text-align: center;
+}
+
+.services h4 {
+    color:#4c4c4c;
+    padding-top: 20px 0 0 20px;
+    margin-top: 30px;
+}
+
+.services h2 {
+    margin-bottom: 4rem;
+    width: inherit;
+}
+
+.services p {
+    font-size: 1rem;
+    padding-bottom: 4rem;
+    margin-top: 2rem;
+    color: #737373;
+}
+
+.services i {
+    height: 80px;
+    width: 80px;
+    font-size: 35px;
+    padding: 25px 20px;
+    color: #fff;
+    background-color: chocolate;
+    border-radius: 50%;
+}
+
+/* Experiences Styles */
+
+/* Etudes & Experiences Styles */
+.cartes img {
+    height:100px;
+    width:auto;
+    margin-top: 80px;
+}
+
+.cartes h2 {
+    margin-bottom: 4rem;
+    width: 100vw;
+}
+
+.cartes {
+    padding: 50px 0px 80px;
+    text-align: center;
+}
+
+.cartes h2, h4, strong {
+    margin: 20px 0px 20px;
+    color: #4c4c4c;
+}
+
+.cartes strong {
+    font-weight: 600;
+}
+
+.cartes p {
+    color: #737373;
+}
+
+.cartes i {
+    height: 30px;
+    width: auto;
+    padding: 5px;
+    font-size: 20px;
+    color: chocolate;
+}
+
+.cartes i:hover {
+    color: darkorange;
+}
+
+/* Contacts Styles */
+.contacts {
+    padding: 50px 0px 50px;
+    text-align: center;
+    background-color: #081c28;
+}
+
+.contacts h2 {
+    color: #fff;
+}
+
+.contacts p {
+    padding-bottom: 70px;
+    color: #fff !important;
+    margin: 20px 0 20px;
+}
+
+.contacts strong {
+    color: #fff;
+}
+
+.contacts .btn {
+    margin-top: 5px;
+    width: 100%;
+    background-color: #7f1C1C;
+    color:#fff;
+    font-size: 15px;
+
+}
+
+/* Footer Styles */
+footer img {
+    margin: 12px;
+}
+
+#footer {
+    padding: 30px;
+    color: #fff;
+    background-color: #2E363F;
+}
+
+#footer strong {
+    color:white;
+}
+
+#footer h4 {
+    color: #fff;
+}
+
+
+#footer .social {
+    font-size: 20px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    padding: 2px;
+    margin-bottom: 15px;
+    margin-right: 5px;
+    color: #fff;
+}
+
+#footer .btn {
+    color: #fff;
+    background-color: coral;
+    border: 1px solid #fff;
+}
