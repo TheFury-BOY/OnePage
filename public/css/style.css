@@ -148,7 +148,36 @@ p {
     border-radius: 50%;
 }
 
-/* Experiences Styles */
+/* Compétences Styles */
+.competences {
+    padding: 5rem;
+    text-align: center;
+}
+
+.competences h4 {
+    color:#4c4c4c;
+    padding-top: 20px 0 0 20px;
+    margin-top: 30px;
+}
+
+.competences h2 {
+    margin-bottom: 4rem;
+}
+
+.competences p {
+    font-size: 1rem;
+    padding-bottom: 4rem;
+    margin-top: 2rem;
+    color: #737373;
+}
+
+.competences i {
+
+    font-size: 80px;
+    padding: 5px 10px;
+    text-shadow: 1px 2px 3px rgba(0,0,0, 0.8);
+
+}
 
 /* Etudes & Experiences Styles */
 .cartes img {
