@@ -1,7 +1,10 @@
-
 /*Default*/
 * {
     scroll-behavior:smooth;
+    --main-color: chocolate;
+    --main-padding: 5rem;
+    --main-bg-dark-color: #fff;
+    --main-bg-light-color: #4c4c4c;
 }
 
 h1, h4 {
@@ -28,7 +31,7 @@ body {
 .btn:hover {
     background-color: #ededed !important;
     color:#3c3c3c !important;
-    border: 1px solid #fff !important;
+    border: 1px solid var(--main-bg-dark-color) !important;
 }
 
 p {
@@ -41,11 +44,11 @@ p {
 
 /*Navbar Style*/
 .navbar a:hover {
-    border-bottom: solid 3px chocolate ;
+    border-bottom: solid 0.2rem var(--main-color);
 }
 
 .navbar a{
-    border-bottom: solid 3px transparent;
+    border-bottom: solid 0.2rem transparent;
     margin:0;
 }
 
@@ -56,7 +59,7 @@ p {
 }
 
 .navbar-toggler {
-    padding:2px;
+    padding:0.13rem;
     border:0;
 }
 
@@ -71,11 +74,12 @@ p {
      url('../img/me.jpg');
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    min-height: 100vh;
+    padding: var(--main-padding);
 }
 
 .header h1 {
-    color: #fff;
+    color: var(--main-bg-dark-color);
     text-align: center;
     font-size: 4rem;
     margin-top:40vh;
@@ -83,18 +87,18 @@ p {
 
 .header h3 {
     text-align: center;
-    color:#fff;
+    color:var(--main-bg-dark-color);
     font-size: 1.8rem;
 }
 .header span {
     font-size: 2rem;
     position: relative;
     top: -10px;
-    color:chocolate;
+    color: var(--main-color)e;
 }
 
 .header strong {
-    color:chocolate;
+    color: var(--main-color);
 }
 
 .flex-container {
@@ -109,21 +113,21 @@ p {
 .flex {
     text-align: center;
     align-self: center;
-    color:#fff;
+    color:var(--main-bg-dark-color);
     border-radius: 2;
     background-color: #12122D;
 }
 
 /* Services Styles */
 .services {
-    padding: 5rem;
+    padding: var(--main-padding);
     text-align: center;
 }
 
 .services h4 {
-    color:#4c4c4c;
-    padding-top: 20px 0 0 20px;
-    margin-top: 30px;
+    color:var(--main-bg-light-color);
+    padding-top: 1.25rem 0 0 .25rem;
+    margin-top: 1.88rem;
 }
 
 .services h2 {
@@ -139,56 +143,60 @@ p {
 }
 
 .services i {
-    height: 80px;
-    width: 80px;
-    font-size: 35px;
-    padding: 25px 20px;
-    color: #fff;
-    background-color: chocolate;
+    height: 5rem;
+    width: 5rem;
+    font-size: 2.20rem;
+    padding: 1.6rem 1.25rem;
+    color: var(--main-bg-dark-color);
+    background-color: var(--main-color);
     border-radius: 50%;
 }
 
 /* Compétences Styles */
 .competences {
-    padding: 5rem;
+    padding: var(--main-padding);
     text-align: center;
     background-color: #12122D;
 }
 
 .competences h4 {
-    color:#fff;
-    margin-top: 10px;
+    color:var(--main-bg-dark-color);
+    margin-top: 0.63rem;
 }
 
 .competences h2 {
     margin-bottom: 1rem;
-    color:#fff;
+    color:var(--main-bg-dark-color);
 }
 
 .competences strong {
-    color:#fff;
+    color:var(--main-bg-dark-color);
 }
 
 .competences p {
     font-size: 1rem;
-    color: #fff;
+    color: var(--main-bg-dark-color);
     margin-bottom: 3rem;
 }
 
 .competences i {
 
-    font-size: 80px;
-    padding: 5px 10px;
-    color: #fff;
-    text-shadow: 1px 2px 3px rgba(0,0,0, 0.8);
+    font-size: 5rem;
+    padding: 0.31rem 0.63rem;
+    color: var(--main-bg-dark-color);
+    text-shadow: 0.06rem 0.13rem 0.18rem rgba(0,0,0, 0.8);
 
 }
 
 /* Etudes & Experiences Styles */
+.cartes {
+    padding: var(--main-padding);
+}
+
 .cartes img {
-    max-height:70px;
+    height:4rem;
     width:auto;
-    margin-top: 80px;
+    margin-top: 5rem;
 }
 
 .cartes h2 {
@@ -197,13 +205,13 @@ p {
 }
 
 .cartes {
-    padding: 50px 0px 80px;
+    padding: 3.13rem 0px 5rem;
     text-align: center;
 }
 
 .cartes h2, h4, strong {
-    margin: 20px 0px 20px;
-    color: #4c4c4c;
+    margin: 1.25rem 0 1.25rem;
+    color: var(--main-bg-light-color);
 }
 
 .cartes strong {
@@ -215,11 +223,11 @@ p {
 }
 
 .cartes i {
-    height: 30px;
+    height: 1.88rem;
     width: auto;
-    padding: 5px;
-    font-size: 20px;
-    color: chocolate;
+    padding: 0.3rem;
+    font-size: 1.25rem;
+    color: var(--main-color);
 }
 
 .cartes i:hover {
@@ -228,43 +236,43 @@ p {
 
 /* Contacts Styles */
 .contacts {
-    padding: 50px 0px 50px;
+    padding: var(--main-padding);
     text-align: center;
     background-color: #081c28;
-    height: 80vh;
+    min-height: 80vh;
 }
 
 .contacts h2 {
-    color: #fff;
+    color: var(--main-bg-dark-color);
 }
 
 .contacts p {
-    padding-bottom: 70px;
-    color: #fff !important;
-    margin: 20px 0 20px;
+    padding-bottom: 4.38rem;
+    color: var(--main-bg-dark-color) !important;
+    margin: 1.25rem 0 1.25rem;
 }
 
 .contacts strong {
-    color: #fff;
+    color: var(--main-bg-dark-color);
 }
 
 .contacts .btn {
-    margin-top: 5px;
+    margin-top: 0.31rem;
     width: 100%;
     background-color: #7f1C1C;
-    color:#fff;
-    font-size: 15px;
+    color:var(--main-bg-dark-color);
+    font-size: 0.93rem;
 
 }
 
 /* Footer Styles */
 footer img {
-    margin: 12px;
+    margin: 0.75rem;
 }
 
 #footer {
-    padding: 30px;
-    color: #fff;
+    padding: 1.88rem;
+    color: var(--main-bg-dark-color);
     background-color: #2E363F;
 }
 
@@ -273,23 +281,23 @@ footer img {
 }
 
 #footer h4 {
-    color: #fff;
+    color: var(--main-bg-dark-color);
 }
 
 
 #footer .social {
-    font-size: 20px;
-    height: 30px;
-    width: 30px;
+    font-size: 1.25rem;
+    height: 1.88rem;
+    width: 1.88rem;
     text-align: center;
-    padding: 2px;
-    margin-bottom: 15px;
-    margin-right: 5px;
-    color: #fff;
+    padding: 0.13rem;
+    margin-bottom: 0.94rem;
+    margin-right: 0.31rem;
+    color: var(--main-bg-dark-color);
 }
 
 #footer .btn {
-    color: #fff;
+    color: var(--main-bg-dark-color);
     background-color: coral;
-    border: 1px solid #fff;
+    border: 0.06rem solid var(--main-bg-dark-color);
 }
