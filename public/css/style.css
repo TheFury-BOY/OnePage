@@ -2,7 +2,7 @@
 * {
     scroll-behavior:smooth;
     --main-color: chocolate;
-    --main-padding: 5rem;
+    --main-padding: 3rem;
     --main-bg-dark-color: #fff;
     --main-bg-light-color: #4c4c4c;
 }
@@ -15,6 +15,7 @@ h1, h4 {
 
 h2 {
     width:100vw;
+    text-align: center;
 }
 
 body {
@@ -41,6 +42,15 @@ p {
 .container-header {
     width:100vw;
 }
+
+.main-container {
+    display: grid;
+    place-items: center center;
+    width:100vw;
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+}
+
 
 /*Navbar Style*/
 .navbar a:hover {
@@ -75,14 +85,12 @@ p {
     background-size: cover;
     background-position: center;
     min-height: 100vh;
-    padding: var(--main-padding);
 }
 
 .header h1 {
     color: var(--main-bg-dark-color);
     text-align: center;
     font-size: 4rem;
-    margin-top:40vh;
 }
 
 .header h3 {
@@ -132,7 +140,6 @@ p {
 
 .services h2 {
     margin-bottom: 4rem;
-    width: inherit;
 }
 
 .services p {
@@ -189,6 +196,15 @@ p {
 }
 
 /* Etudes & Experiences Styles */
+
+#etudes {
+    background-image:linear-gradient(rgba(255,255,255,0.8),rgba(255,250,250,0.8)),
+     url('../img/books.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
 .cartes {
     padding: var(--main-padding);
 }
@@ -199,13 +215,7 @@ p {
     margin-top: 5rem;
 }
 
-.cartes h2 {
-    margin-bottom: 1rem;
-    width: 100vw;
-}
-
 .cartes {
-    padding: 3.13rem 0px 5rem;
     text-align: center;
 }
 
