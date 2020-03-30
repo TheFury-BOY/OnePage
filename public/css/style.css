@@ -85,6 +85,7 @@ p {
     background-size: cover;
     background-position: center;
     min-height: 100vh;
+    padding-top: 2rem;
 }
 
 .header h1 {
