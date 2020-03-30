@@ -14,12 +14,11 @@ h1, h4 {
 }
 
 h2 {
-    width:100vw;
     text-align: center;
+    width: 100%;
 }
 
 body {
-    overflow-x: hidden;
     width:100vw;
 }
 
@@ -40,7 +39,7 @@ p {
 }
 
 .container-header {
-    width:100vw;
+    width: 100%;
 }
 
 .main-container {
@@ -49,6 +48,11 @@ p {
     width:100vw;
     padding-top: var(--main-padding);
     padding-bottom: var(--main-padding);
+}
+
+
+.ps__rail-y {
+    margin-top:3.16%;
 }
 
 
@@ -312,3 +316,19 @@ footer img {
     background-color: coral;
     border: 0.06rem solid var(--main-bg-dark-color);
 }
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+    .main-container {
+        padding-top: var(--main-padding);
+        padding-bottom: var(--main-padding);
+    }
+  }
+  
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 600px) {
+    .main-container {
+        padding-top: var(--main-padding);
+        padding-bottom: var(--main-padding);
+    }
+  }
