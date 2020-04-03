@@ -5,6 +5,21 @@ $( document ).ready(function() {
         new WOW().init();
     });
     
+    function alterClass() {
+        var wd = $(window).width()
+        if (wd < 600) {
+            $('section, div').removeClass('wow');
+        } else if (wd > 600) {
+            $('section, div').addClass('wow');
+            new WOW().init();
+        }
+    }
+
+    $( window ).resize(function() {
+        alterClass();
+    })
+
+        alterClass();
 });
 /*
 new PerfectScrollbar('body', {
