@@ -9,6 +9,7 @@ html {
     --main-padding: 3rem;
     --main-bg-dark-color: #fff;
     --main-bg-light-color: #4c4c4c;
+    --main-transition: all 0.5s ease-out;
 }
 
 h1, h4 {
@@ -22,12 +23,21 @@ h2 {
     width: 100%;
 }
 
+a {
+    transition: var(--main-transition);
+}
+
+i {
+    transition: var(--main-transition);
+}
+
 body {
     width:100vw;
+    height:100vh;
 }
 
 .btn {
-    transition: all 300ms ease-in-out;
+    transition: var(--main-transition);
     font-weight: 500 !important;
     text-transform: uppercase;
 }
@@ -52,11 +62,6 @@ p {
     width:100vw;
     padding-top: var(--main-padding);
     padding-bottom: var(--main-padding);
-}
-
-
-.ps__rail-y {
-    margin-top:3.16%;
 }
 
 
@@ -175,6 +180,10 @@ p {
     background-color: #12122D;
 }
 
+.competences section {
+    height: 16rem;
+}
+
 .competences h4 {
     color:var(--main-bg-dark-color);
     margin-top: 0.63rem;
@@ -193,15 +202,32 @@ p {
     font-size: 1rem;
     color: var(--main-bg-dark-color);
     margin-bottom: 3rem;
+    
 }
 
 .competences i {
-
-    font-size: 5rem;
+    font-size: 7rem;
     padding: 0.31rem 0.63rem;
     color: var(--main-bg-dark-color);
     text-shadow: 0.06rem 0.13rem 0.18rem rgba(0,0,0, 0.8);
+    transition: all 0.5s ease-out;
+}
 
+.competences p {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+    /*transition: visibility 0s, opacity 0.5s linear;*/
+}
+
+.competences section:hover i{
+    font-size: 5rem;
+    transition: all 0.5s ease-out;
+}
+
+.competences section:hover p{
+    visibility: visible;
+    opacity: 1;
 }
 
 /* Etudes & Experiences Styles */
