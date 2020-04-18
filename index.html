@@ -17,7 +17,7 @@
     <title>Adrien Dudeck</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#links" data-offset="50">
     <!-- Create Navbar -->
     <nav class="navbar navbar-dark bg-dark fixed-top navbar-inverse navbar-expand-lg" role="navigation">
         <!-- Navbar Container -->
@@ -27,16 +27,15 @@
                     aria-controls="links" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand d-none d-lg-inline-block"> <i>Adrien Dudeck</i></a>
+                <a class="navbar-brand d-none d-lg-inline-block"><i>Adrien Dudeck</i></a>
             </div>
             <div id="links" class="navbar-collapse collapse justify-content-end">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="nav-item"><a class="nav-link" href="#">A PROPOS</a></li>
-                    <li class="nav-item"><a class="nav-link menu-item" href="#services">SERVICES</a></li>
-                    <li class="nav-item"><a class="nav-link menu-item" href="#competences">COMPETENCES</a></li>
-                    <li class="nav-item"><a class="nav-link menu-item" href="#experiences">EXPERIENCES</a></li>
-                    <li class="nav-item"><a class="nav-link menu-item" href="#etudes">ETUDES</a></li>
-                    <li class="nav-item"><a class="nav-link menu-item" href="#contacts">CONTACT</a></li>
+                    <li class="nav-item"><a class="nav-link menu-item" href="#services" data-target="#services">SERVICES</a></li>
+                    <li class="nav-item"><a class="nav-link menu-item" href="#competences" data-target="#competences">COMPETENCES</a></li>
+                    <li class="nav-item"><a class="nav-link menu-item" href="#experiences" data-target="#experiences">EXPERIENCES</a></li>
+                    <li class="nav-item"><a class="nav-link menu-item" href="#etudes" data-target="#etudes">ETUDES</a></li>
+                    <li class="nav-item"><a class="nav-link menu-item" href="#contacts" data-target="#contacts">CONTACT</a></li>
                 </ul>
             </div>
         </div>
@@ -62,22 +61,22 @@
         <div class="container"> 
             <div class="row">
                 <h2 class="wow zoomIn" data-wow-delay="0,2s"><strong>Adrien Dudeck</strong> Services</h2>
-                <section class="col-lg-3 col-md-3 wow slideInLeft" data-wow-delay="2,0s">
+                <section class="col-lg-3 col-md-6 wow slideInLeft" data-wow-delay="2,0s">
                     <i class="fas fa-desktop"></i>
                     <h4>Dévelopement Web</h4>
                     <p>Création de site Web, Référencement (SEO), et Web Marketing.</p>
                 </section>
-                <section class="col-lg-3 col-md-3 wow slideInLeft" data-wow-delay="1,5s">
+                <section class="col-lg-3 col-md-6 wow slideInLeft" data-wow-delay="1,5s">
                     <i class="fas fa-industry"></i>
                     <h4>Dévelopement Applications Industrielles</h4>
                     <p>Création d'application de Reporting, Gestion des Ressources Humaines.</p>
                 </section>
-                <section class="col-lg-3 col-md-3 wow slideInLeft" data-wow-delay="1,0s">
+                <section class="col-lg-3 col-md-6 wow slideInLeft" data-wow-delay="1,0s">
                     <i class="fas fa-mobile-alt"></i>
                     <h4>Développement Mobile</h4>
                     <p>Création de site Mobile, Référencement (SEO), et Web Marketing.</p>
                 </section>
-                <section class="col-lg-3 col-md-3 wow slideInLeft" data-wow-delay="0,5s">
+                <section class="col-lg-3 col-md-6 wow slideInLeft" data-wow-delay="0,5s">
                     <i class="fas fa-tools"></i>
                     <h4>Maintenance & Refactorisation</h4>
                     <p>Mis à jour site Web & Application Industrielle, Mise à jour de sécurité.</p>
@@ -92,57 +91,57 @@
                 <h2 class="wow zoomIn" data-wow-delay="0,2s"><strong>Adrien Dudeck</strong> Domaines d'Expertise
                 </h2>
                 <p class="container-header">Des exériences diversifiées, pour un travail de qualité</p>
-                <section class="col-lg-3 col-md-3" data-wow-delay="2,0s">
+                <section class="col-lg-3 col-md-6" data-wow-delay="2,0s">
                     <i class="fab fa-symfony"></i>
                     <h4>Symfony 4</h4>
                     <p>Twig, Doctrine, Yaml...</p>
                 </section>
-                <section class="col-lg-3 col-md-3" data-wow-delay="1,5s">
+                <section class="col-lg-3 col-md-6" data-wow-delay="1,5s">
                     <i class="fab fa-php" style="color: lightskyblue;"></i>
                     <h4>Php 5.6+</h4>
                     <p>Toutes versions depuis PhP5.6. (POO...)</p>
                 </section>
-                <section class="col-lg-3 col-md-3" data-wow-delay="1,0s">
+                <section class="col-lg-3 col-md-6" data-wow-delay="1,0s">
                     <i class="fab fa-js" style="color: yellow;"></i>
                     <h4>Javascript, Jquery</h4>
-                    <p>Vanilla Javascript (WebComponent...), Jquery (Ajax, DOM, Events...).</p>
+                    <p>Vanilla Javascript (ES6, WebComponent...), Jquery (Ajax, DOM, Events...).</p>
                 </section>
-                <section class="col-lg-3 col-md-3" data-wow-delay="0,5s">
+                <section class="col-lg-3 col-md-6" data-wow-delay="0,5s">
                     <i class="fab fa-html5" style="color: darkorange;" style="color: yellow;"></i>
                     <h4>Html</h4>
                     <p>Connaissances HTML avancées.</p>
                 </section>
-                <section class="col-lg-3 col-md-3" data-wow-delay="0,5s">
+                <section class="col-lg-3 col-md-6" data-wow-delay="0,5s">
                     <i class="fab fa-css3" style="color: dodgerblue;"></i>
                     <h4>Css</h4>
                     <p>Connaissances CSS avancées (Variables, Animations...)</p>
                 </section>
-                <section class="col-lg-3 col-md-3" data-wow-delay="1,0s">
+                <section class="col-lg-3 col-md-6" data-wow-delay="1,0s">
                     <i class="fas fa-database" style="color: grey;"></i>
                     <h4>MySql, SqlServer</h4>
                     <p>Gestion de base de données (Modèles de données, gestion des droits utilisateurs...)</p>
                 </section>
-                <section class="col-lg-3 col-md-3" data-wow-delay="1,5s">
+                <section class="col-lg-3 col-md-6" data-wow-delay="1,5s">
                     <i class="fab fa-bootstrap" style="color: darkorchid;"></i>
                     <h4>Bootstrap 4</h4>
                     <p>Utilisation avancées du Framework.</p>
                 </section>
-                <section class="col-lg-3 col-md-3" data-wow-delay="2,0s">
+                <section class="col-lg-3 col-md-6" data-wow-delay="2,0s">
                     <i class="fab fa-git" style="color: darkorange;"></i>
                     <h4>Git</h4>
                     <p>Versionning, Utilisation en CLI ou avec Logiciel client.</p>
                 </section>
-                <section class="col-lg-3 col-md-3" data-wow-delay="2,0s">
+                <section class="col-lg-3 col-md-6" data-wow-delay="2,0s">
                     <i class="fab fa-github"></i>
                     <h4>Github</h4>
                     <p>Gestion de dépôts, projets...</p>
                 </section>
-                <section class="col-lg-3 col-md-3" data-wow-delay="1,5s">
+                <section class="col-lg-3 col-md-6" data-wow-delay="1,5s">
                     <i class="fab fa-wordpress" style="color: lightskyblue;"></i>
                     <h4>Wordpress</h4>
                     <p>Intégration, Création PlugIns & Templates</p>
                 </section>
-                <section class="col-lg-3 col-md-3" data-wow-delay="1,0s">
+                <section class="col-lg-3 col-md-6" data-wow-delay="1,0s">
                     <i class="fab fa-microsoft" style="color: darkorange;"></i>
                     <h4>Office</h4>
                     <p>Powerpoint, Excel, Word...</p>
@@ -157,8 +156,8 @@
             <div class="row">
                 <h2 class="wow zoomIn" data-wow-delay="0,2s"><strong>Adrien Dudeck</strong> Expériences</h2>
                 <p class="container-header">Des exériences diversifiées, pour un travail de qualité.</p>
-                <section class="col-lg-3 col-md-3 wow bounceInRight" data-wow-delay="2,0s">
-                    <img src="public/img/Lear_Corporation.svg" alt="Qweeby" class="img-circle">
+                <section class="col-lg-3 col-md-6 wow bounceInRight" data-wow-delay="2,0s">
+                    <img src="public/img/Lear_Corporation.png" alt="Lear Corporation" class="img-circle">
                     <h4>Stage - Formation</h4>
                     <strong>Symfony, Bootstrap, Jquery. Automatisation flux de Reporting
                     </strong>
@@ -167,7 +166,7 @@
                     <a href="https://fr.linkedin.com/company/qweeby" target="_blank"><i class="fab fa-linkedin"></i></a>
                     <a href="https://qweeby.com/" target="_blank"><i class="fas fa-globe"></i></a>
                 </section>
-                <section class="col-lg-3 col-md-3 wow bounceInRight" data-wow-delay="1,5s">
+                <section class="col-lg-3 col-md-6 wow bounceInRight" data-wow-delay="1,5s">
                     <img src="public/img/qweeby.png" alt="Qweeby" class="img-circle">
                     <h4>Stage - Formation</h4>
                     <strong>Intégrateur Sharepoint. Automatisation flux de Reporting</strong>
@@ -176,7 +175,7 @@
                     <a href="https://fr.linkedin.com/company/qweeby" target="_blank"><i class="fab fa-linkedin"></i></a>
                     <a href="https://qweeby.com/" target="_blank"><i class="fas fa-globe"></i></a>
                 </section>
-                <section class="col-lg-3 col-md-3 wow bounceInRight" data-wow-delay="1,0s">
+                <section class="col-lg-3 col-md-6 wow bounceInRight" data-wow-delay="1,0s">
                     <img src="public/img/rcteam.png" alt="RcTeam" class="img-circle">
                     <h4>Employé Logistique</h4>
                     <strong>Suivi des Stocks, gestion de commandes (Prestashop).</strong>
@@ -184,7 +183,7 @@
                     <a href="https://fr-fr.facebook.com/rcteamfr/" target="_blank"><i class="fab fa-facebook"></i></a>
                     <a href="https://www.rcteam.fr/" target="_blank"><i class="fas fa-globe"></i></a>
                 </section>
-                <section class="col-lg-3 col-md-3 wow bounceInRight" data-wow-delay="0,5s">
+                <section class="col-lg-3 col-md-6 wow bounceInRight" data-wow-delay="0,5s">
                     <img src="public/img/easydis-lw.png" alt="Easydis" class="img-circle">
                     <h4>Préparateur de Commandes</h4>
                     <strong>CACES 1</strong>
@@ -192,7 +191,7 @@
                     <a href="https://fr-fr.facebook.com/GroupeCasino/" target="_blank"><i class="fab fa-facebook"></i></a>
                     <a href="http://www.easydis.com/fr/" target="_blank"><i class="fas fa-globe"></i></a>
                 </section>
-                <section class="col-lg-3 col-md-3 wow bounceInRight" data-wow-delay="2,0s">
+                <section class="col-lg-3 col-md-6 wow bounceInRight" data-wow-delay="2,0s">
                     <img src="public/img/Eni.gif" alt="Freefield Marketing" class="img-circle">
                     <h4>Conseillé Clientèle</h4>
                     <strong>Démarchage à domicile, Gestion portefeuille clients</strong>
@@ -201,7 +200,7 @@
                     <a href="#"><i class="fab fa-twitter"></i></a>
                     <a href="#"><i class="fas fa-globe"></i></a>
                 </section>
-                <section class="col-lg-3 col-md-3 wow bounceInLeft" data-wow-delay="1,5s">
+                <section class="col-lg-3 col-md-6 wow bounceInLeft" data-wow-delay="1,5s">
                     <img src="public/img/leclerc.png" alt="E. Leclerc" class="img-circle">
                     <h4>Employé de Drive</h4>
                     <strong>Gestion des Stocks, Prépartion commandes.</strong>
@@ -209,14 +208,14 @@
                     <a href="https://fr-fr.facebook.com/E.Leclerc/" target="_blank"><i class="fab fa-facebook"></i></a>
                     <a href="https://www.e-leclerc.com/firminy" target="_blank"><i class="fas fa-globe"></i></a>
                 </section>
-                <section class="col-lg-3 col-md-3 wow bounceInLeft" data-wow-delay="1,0s">
+                <section class="col-lg-3 col-md-6 wow bounceInLeft" data-wow-delay="1,0s">
                     <img src="public/img/mjc.png" alt="MJC Firminy" class="img-circle">
                     <h4>Stage - Formation</h4>
                     <strong>Infographie, mise en place charte graphique, création flyer et livret.</strong>
                     <p>2014 - MJC Firminy</p>
                     <a href="https://www.mjc-firminy.fr/" target="_blank"><i class="fas fa-globe"></i></a>
                 </section>
-                <section class="col-lg-3 col-md-3 wow bounceInLeft" data-wow-delay="0,5s">
+                <section class="col-lg-3 col-md-6 wow bounceInLeft" data-wow-delay="0,5s">
                     <img src="public/img/afrac-lw.png" alt="Afrac Services" class="img-circle" style="max-width:150px;">
                     <h4>Conducteur de Projet</h4>
                     <strong>Application de Calcul de coûts, suivi opérationnel (stocks, livraisons).</strong>
@@ -225,7 +224,7 @@
                             class="fab fa-linkedin"></i></a>
                     <a href="https://www.afrac.fr/" target="_blank"><i class="fas fa-globe"></i></a>
                 </section>
-                <section class="col-lg-3 col-md-3  wow bounceInLeft" data-wow-delay="0,5s">
+                <section class="col-lg-3 col-md-6  wow bounceInLeft" data-wow-delay="0,5s">
                     <img src="public/img/greencup.png" alt="GreenCup" class="img-circle">
                     <h4>Conducteur de Projet</h4>
                     <strong>Création sytème d'aide à la décision (Paie, Calcul de coûts, GANTT) pour déplacement en Zone
@@ -246,7 +245,7 @@
                 <h2 class="wow zoomIn" data-wow-delay="0,2s"><strong>Adrien Dudeck</strong> Diplômes & Certification</h2>
                 <p class="container-header">Des formations de qualités, pour une meilleure expertise</p>
                 <hr>
-                <section class="col-lg-3 col-md-3 wow rollIn" data-wow-delay="2,0s">
+                <section class="col-lg-3 col-md-6 wow rollIn" data-wow-delay="2,0s">
                     <img src="public/img/greta.png" alt="Greta" class="img-circle">
                     <h4>Titre Professionnel</h4>
                     <strong>Développement Web & Web Mobile</strong>
@@ -255,15 +254,15 @@
                         target="_blank"><i class="fab fa-facebook"></i></a>
                     <a href="https://www1.ac-lyon.fr/greta/loire" target="_blank"><i class="fas fa-globe"></i></a>
                 </section>
-                <section class="col-lg-3 col-md-3 wow rollIn" data-wow-delay="1,5s">
-                    <img src="public/img/ANSSI.svg" alt="ANSSI" class="img-circle">
+                <section class="col-lg-3 col-md-6 wow rollIn" data-wow-delay="1,5s">
+                    <img src="public/img/ANSSI.png" alt="ANSSI" class="img-circle">
                     <h4>Certification</h4>
                     <strong>Sécurité Systèmes d'Information</strong>
                     <p>2020 - SecNum Académie</p>
                     <a href="https://www.secnumacademie.gouv.fr" target="_blank"><i class="fas fa-globe"></i></a>
                 </section>
-                <section class="col-lg-3 col-md-3 wow rollIn" data-wow-delay="1,0s">
-                    <img src="public/img/Google.svg" alt="Google" class="img-circle">
+                <section class="col-lg-3 col-md-6 wow rollIn" data-wow-delay="1,0s">
+                    <img src="public/img/Google.png" alt="Google" class="img-circle">
                     <h4>Cetification</h4>
                     <strong>Fondamentaux Marketing Numérique</strong>
                     <p>2020 - Google Ateliers Numériques</p>
@@ -271,7 +270,7 @@
                         target="_blank"><i class="fab fa-facebook"></i></a>
                     <a href="https://learndigital.withgoogle.com/ateliersnumeriques" target="_blank"><i class="fas fa-globe"></i></a>
                 </section>
-                <section class="col-lg-3 col-md-3 wow rollIn" data-wow-delay="0,5s">
+                <section class="col-lg-3 col-md-6 wow rollIn" data-wow-delay="0,5s">
                     <img src="public/img/transformations.png" alt="transformations" class="img-circle">
                     <h4>Boosteur d'Intelligence</h4>
                     <strong>Lecture Rapide, Technique de mémorisation</strong>
@@ -281,7 +280,7 @@
                     <a href="#"><i class="fab fa-twitter"></i></a>
                     <a href="https://trans-formations.fr/" target="_blank"><i class="fas fa-globe"></i></a>
                 </section>
-                <section class="col-lg-3 col-md-3 wow rollIn" data-wow-delay="0,5s">
+                <section class="col-lg-3 col-md-6 wow rollIn" data-wow-delay="0,5s">
                     <img src="public/img/iut.png" alt="IUT Jean-Monnet" class="img-circle">
                     <h4>Diplôme Universitaire</h4>
                     <strong>Gestion des Entreprises et Administrations</strong>
@@ -292,7 +291,7 @@
                     <a href="http://www.iut.univ-st-etienne.fr/fr/index.html" target="_blank"><i
                             class="fas fa-globe"></i></i></a>
                 </section>
-                <section class="col-lg-3 col-md-3 wow rollIn" data-wow-delay="1,0s">
+                <section class="col-lg-3 col-md-6 wow rollIn" data-wow-delay="1,0s">
                     <img src="public/img/urfe.png" alt="Lycée Honoré d'Urfé" class="img-circle">
                     <h4>Baccalauréat S.T.G.</h4>
                     <strong>Gestion des Systèmes d'Information</strong>
@@ -367,6 +366,7 @@
                 <section class="col-lg-4 col-md-4 wow bounceInRight" data-wow-delay="1,5s">
                     <h4>Restez Connectés</h4>
                     <a href="https://github.com/TheFury-BOY" target="_blank"><i class="social fab fa-github"></i></a>
+                    <a href="https://codepen.io/thefury-boy" target="_blank"><i class="social fab fa-codepen"></i></a>
                     <a href="https://github.com/TheFury-BOY" target="_blank"><i class="social fab fa-linkedin"></i></a>
                     <a href="https://github.com/TheFury-BOY" target="_blank"><i class="social fab fa-facebook"></i></a>
                     <div id="newsletter" class="input-group mb-3">

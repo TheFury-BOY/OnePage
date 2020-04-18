@@ -6,6 +6,7 @@ html {
 * {
     scroll-behavior:smooth;
     --main-color: chocolate;
+    --main-hover-color:darkorange;
     --main-padding: 3rem;
     --main-bg-dark-color: #fff;
     --main-bg-light-color: #4c4c4c;
@@ -34,6 +35,7 @@ i {
 body {
     width:100vw;
     height:100vh;
+    overflow-x: hidden;
 }
 
 .btn {
@@ -202,6 +204,10 @@ p {
     font-size: 1rem;
     color: var(--main-bg-dark-color);
     margin-bottom: 3rem;
+    visibility: hidden;
+    opacity: 0;
+    transition: var(--main-transition);
+    /*transition: visibility 0s, opacity 0.5s linear;*/
     
 }
 
@@ -210,19 +216,12 @@ p {
     padding: 0.31rem 0.63rem;
     color: var(--main-bg-dark-color);
     text-shadow: 0.06rem 0.13rem 0.18rem rgba(0,0,0, 0.8);
-    transition: all 0.5s ease-out;
-}
-
-.competences p {
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.5s ease-out;
-    /*transition: visibility 0s, opacity 0.5s linear;*/
+    transition: var(--main-transition);
 }
 
 .competences section:hover i{
     font-size: 5rem;
-    transition: all 0.5s ease-out;
+    transition: var(--main-transition);
 }
 
 .competences section:hover p{
@@ -276,7 +275,8 @@ p {
 }
 
 .cartes i:hover {
-    color: darkorange;
+    color: var(--main-hover-color);
+    transition: var(--main-transition);
 }
 
 /* Contacts Styles */
