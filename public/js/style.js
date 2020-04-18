@@ -14,12 +14,6 @@ $(document).ready(function () {
             new WOW().init();
         }
     }
-
-    $(window).resize(function () {
-        alterClass();
-    })
-
-    alterClass();
 });
 
 // Click Animations
@@ -99,3 +93,4 @@ new PerfectScrollbar('body',{
     scrollYMarginOffset: -2
 });
 */
+
