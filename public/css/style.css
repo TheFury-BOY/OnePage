@@ -13,7 +13,7 @@ html {
     --main-transition: all 0.5s ease-out;
 }
 
-h1, h3, h4 {
+h1, h4 {
     font-family: 'PT Sans Narrow', Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
@@ -26,6 +26,11 @@ h2 {
 
 a {
     transition: var(--main-transition);
+    color:white;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 i {
@@ -340,6 +345,10 @@ p {
     margin-bottom: 0.94rem;
     margin-right: 0.31rem;
     color: var(--main-bg-dark-color);
+}
+
+#footer .social:hover {
+    color: gray;
 }
 
 #footer .btn {
