@@ -111,7 +111,7 @@ p {
 /* Header Style */
 .header {
     background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),
-     url('../img/me.jpg');
+     url('../img/me.png');
     background-size: cover;
     background-position: center;
     min-height: 100vh;
@@ -252,7 +252,7 @@ p {
 
 #etudes {
     background-image:linear-gradient(rgba(255,255,255,0.8),rgba(255,250,250,0.8)),
-     url('../img/books.jpg');
+     url('../img/books.png');
     background-size: cover;
     background-position: center;
     min-height: 100vh;
