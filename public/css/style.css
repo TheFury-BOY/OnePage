@@ -79,6 +79,10 @@ p {
 
 
 /*Navbar Style*/
+.navbar strong {
+    color: var(--main-bg-dark-color);
+}
+
 .navbar a:hover {
     border-bottom: solid 0.2rem var(--main-color);
 }
