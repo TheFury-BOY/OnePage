@@ -1,4 +1,10 @@
 /*Default*/
+
+@font-face {
+    font-family: "Display-Serif";
+    src: url("/public/fonts/PlayfairDisplay.ttf") format("ttf");
+}
+
 html {
     font-size: 100%;
 }
@@ -123,7 +129,7 @@ p {
     font-size: 2rem;
     position: relative;
     top: -10px;
-    color: var(--main-color)e;
+    color: var(--main-color);
 }
 
 .header strong {
@@ -191,9 +197,13 @@ p {
     height: 16rem;
 }
 
-.competences h4 {
+.competences h4, .competences h3 {
     color:var(--main-bg-dark-color);
     margin-top: 0.63rem;
+}
+
+.competences h3 {
+    width: 100%;
 }
 
 .competences h2 {

@@ -1,19 +1,9 @@
 $(document).ready(function () {
     new WOW().init();
+});
 
-    $("a.menu-item").click(function activateAnimate() {
-        new WOW().init();
-    });
-
-    function alterClass() {
-        var wd = $(window).width()
-        if (wd < 600) {
-            $('section').removeClass('wow');
-        } else if (wd > 600) {
-            $('section').addClass('wow');
-            new WOW().init();
-        }
-    }
+$("a.menu-item").click(function activateAnimate() {
+    new WOW().init();
 });
 
 // Click Animations
@@ -36,7 +26,7 @@ $("#contacts button").on("click", function () {
     }
 
     // Check forename input
-     if ($("#prenom input").val() === "") {
+    if ($("#prenom input").val() === "") {
         $("#prenom")
             .addClass("form-error animated shake")
             .one(
@@ -45,7 +35,7 @@ $("#contacts button").on("click", function () {
                     $(this).removeClass("animated shake");
                 }
             );
-        }
+    }
 
     // Check email input
     if ($("#email input").val() === "") {
@@ -93,4 +83,3 @@ new PerfectScrollbar('body',{
     scrollYMarginOffset: -2
 });
 */
-
