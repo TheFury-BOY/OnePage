@@ -1,11 +1,11 @@
 if ($(window).width() <= 800) {
     $(document).ready(mobileAnimationUpdate())
-}
+};
 
 
 function mobileAnimationUpdate() {
     $("section").toggleClass("wow mobile")
-}
+};
 
 $(document).ready(function () {
     new WOW().init();
@@ -19,7 +19,7 @@ $("a.menu-item").click(function activateAnimate() {
 
 // Click Animations
 
-$("#contacts button").on("click", function () {
+$("#contacts button").click(function () {
     /*
     If any input is empty shake it. After the animation is complete, remove the shake and animated classes so that the animation can repeat.
     */
