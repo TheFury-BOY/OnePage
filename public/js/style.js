@@ -1,10 +1,21 @@
+if ($(window).width() <= 800) {
+    $(document).ready(mobileAnimationUpdate())
+}
+
+
+function mobileAnimationUpdate() {
+    $("section").toggleClass("wow mobile")
+}
+
 $(document).ready(function () {
     new WOW().init();
 });
 
+
 $("a.menu-item").click(function activateAnimate() {
     new WOW().init();
 });
+
 
 // Click Animations
 
@@ -73,13 +84,3 @@ $("#contacts button").on("click", function () {
             );
     }
 });
-
-/*
-new PerfectScrollbar('body',{
-    wheelSpeed: 10,
-    wheelPropagation: 3,
-    minScrollbarLength: 10,
-    suppressScrollX: true,
-    scrollYMarginOffset: -2
-});
-*/
