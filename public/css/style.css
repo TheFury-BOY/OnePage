@@ -118,6 +118,13 @@ p {
     padding-top: 2rem;
 }
 
+@media screen and (max-width: 800px) {
+    .header {
+        background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),
+         url('../img/me-mobile.jpg');
+    }
+}
+
 .header h1 {
     color: var(--main-bg-dark-color);
     text-align: center;
@@ -256,6 +263,13 @@ p {
     background-size: cover;
     background-position: center;
     min-height: 100vh;
+}
+
+@media screen and (max-width: 800px) {
+    .etudes {
+        background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),
+         url('../img/books-mobile.jpg');
+    }
 }
 
 .cartes {
